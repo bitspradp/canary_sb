@@ -9,8 +9,6 @@ from flask_prometheus import monitor
 app = Eve()
 
 app.register_blueprint(swagger)
-
-# required. See http://swagger.io/specification/#infoObject for details.
 app.config['SWAGGER_INFO'] = {
     'title': 'Canary test API',
     'version': version,
